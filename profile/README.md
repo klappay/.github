@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./logo.png" alt="Klap" width="96" />
+  <img src="./logo.png" alt="Klappay" width="96" />
 </p>
 
-<h1 align="center">Klap</h1>
+<h1 align="center">Klappay</h1>
 <p align="center"><strong>Keep Liquidity Always Permissionless.</strong></p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 
 ---
 
-Klap funds never pass through Klap. Every charge gets a predicted,
+Klappay funds never pass through Klappay. Every charge gets a predicted,
 immutable on-chain address — a [0xSplits](https://splits.org) split
 contract with recipients frozen at creation — and payments settle
 directly from payer to merchant on-chain. Our own operator wallet only
@@ -34,13 +34,13 @@ split; it can't redirect funds.
 
 ## How a payment works
 
-1. **Create a charge.** Klap predicts (doesn't deploy yet) an immutable
+1. **Create a charge.** Klappay predicts (doesn't deploy yet) an immutable
    split contract address via CREATE2 — the same address regardless of
    which accepted token/network pair the payer ends up using.
 2. **Payer sends funds.** USDC or USDT, on any network the charge
    accepts, straight to that address — no custody, no intermediate
    wallet.
-3. **Klap detects and settles.** The transfer is picked up in real time
+3. **Klappay detects and settles.** The transfer is picked up in real time
    (webhook-driven, with a reconciliation fallback), and the split
    contract distributes the funds on-chain: merchant and platform fee,
    in one transaction.
@@ -62,7 +62,7 @@ each package's own repository.
 
 ---
 
-<p align="center"><sub>Klap is closed-source at its core — the API
+<p align="center"><sub>Klappay is closed-source at its core — the API
 implementation isn't public — but the packages that make integrating
 against it easier (<code>@klappay/types</code>, the official SDKs, and
 the CLI) are.</sub></p>

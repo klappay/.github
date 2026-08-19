@@ -27,10 +27,27 @@ split; it can't redirect funds.
 - **[`@klappay/types`](https://www.npmjs.com/package/@klappay/types)** —
   TypeScript types and Zod schemas for the API's full request/response
   surface. MIT-licensed, framework-agnostic, zero networking.
-- **Official SDKs and a CLI** — client libraries for integrating without
-  hand-rolling HTTP calls and webhook signature verification, and a
+- **[`@klappay/node`](https://www.npmjs.com/package/@klappay/node)** —
+  official Node.js SDK, for integrating without hand-rolling HTTP calls
+  and webhook signature verification.
+- **[`@klappay/cli`](https://www.npmjs.com/package/@klappay/cli)** — a
   terminal client for creating charges, simulating sandbox events, and
   forwarding webhooks straight to `localhost`.
+- **[`@klappay/checkout-kit`](https://www.npmjs.com/package/@klappay/checkout-kit)** —
+  build your own checkout UI without reimplementing wallet integration
+  or charge-to-payment-option logic. Docs at
+  [node-checkout-sdk.klappay.com](https://node-checkout-sdk.klappay.com).
+
+## Live
+
+- **[klappay.com](https://klappay.com)** — marketing site.
+- **[app.klappay.com](https://app.klappay.com)** — merchant dashboard:
+  manage API keys, create and track charges.
+- **[pay.klappay.com](https://pay.klappay.com)** — hosted checkout page
+  for charges, no UI work required on the merchant's end.
+- **Klappay Link** — payment links product (`pay.klappay.com/p/{slug}`),
+  create a shareable payment link from a dashboard with no code or Core
+  API integration required. 🚧 Under construction.
 
 ## How a payment works
 
